@@ -18,7 +18,7 @@ def is_enabled(value, default):
 class Config(object):
     # Bot Information 
     TECH_VJ_BOT_TOKEN = os.environ.get("TECH_VJ_BOT_TOKEN", "6950688402:AAE4g1B4CfoHOCjwJjWfeJURfIithLzRV8o")
-    TECH_VJ_BOT_USERNAME = os.environ.get("TECH_VJ_BOT_USERNAME", "") # Bot username without @.
+    TECH_VJ_BOT_USERNAME = os.environ.get("TECH_VJ_BOT_USERNAME", "FilterJaat_Bot") # Bot username without @.
     
     # The Telegram API things
     TECH_VJ_API_ID = int(os.environ.get("TECH_VJ_API_ID", "23011516"))
