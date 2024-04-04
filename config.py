@@ -17,8 +17,8 @@ def is_enabled(value, default):
 
 class Config(object):
     # Bot Information 
-    TECH_VJ_BOT_TOKEN = os.environ.get("TECH_VJ_BOT_TOKEN", "6950688402:AAE4g1B4CfoHOCjwJjWfeJURfIithLzRV8o")
-    TECH_VJ_BOT_USERNAME = os.environ.get("TECH_VJ_BOT_USERNAME", "FilterJaat_Bot") # Bot username without @.
+    TECH_VJ_BOT_TOKEN = os.environ.get("TECH_VJ_BOT_TOKEN", "6727306179:AAHs9uOOaabDnmv5dwtgxjANcaEtYV8GC4Y")
+    TECH_VJ_BOT_USERNAME = os.environ.get("TECH_VJ_BOT_USERNAME", "Filejaat_bot") # Bot username without @.
     
     # The Telegram API things
     TECH_VJ_API_ID = int(os.environ.get("TECH_VJ_API_ID", "23011516"))
@@ -55,14 +55,14 @@ class Config(object):
     TECH_VJ_MAX_RESULTS = "50"
 
     # channel information
-    TECH_VJ_LOG_CHANNEL = int(os.environ.get("TECH_VJ_LOG_CHANNEL", "-1001682032814")) # your log channel id and make bot admin in log channel with full right 
+    TECH_VJ_LOG_CHANNEL = int(os.environ.get("TECH_VJ_LOG_CHANNEL", "-1002018047422")) # your log channel id and make bot admin in log channel with full right 
     
     # if you want force subscribe then give your channel id below else leave blank
-    tech_vj_update_channel = environ.get('TECH_VJ_UPDATES_CHANNEL', '') # your update channel id and make bot admin in update channel with full right
+    tech_vj_update_channel = environ.get('TECH_VJ_UPDATES_CHANNEL', '-1001682032814') # your update channel id and make bot admin in update channel with full right
     TECH_VJ_UPDATES_CHANNEL = int(tech_vj_update_channel) if tech_vj_update_channel and id_pattern.search(tech_vj_update_channel) else None  
     
     # Url Shortner Information 
-    TECH_VJ = bool(environ.get('TECH_VJ', False)) # Set False If you want shortlink off else True
+    TECH_VJ = bool(environ.get('TECH_VJ', True)) # Set False If you want shortlink off else True
     TECH_VJ_URL = environ.get('TECH_VJ_URL', 'OnePageLink.in') # your shortlink url domain or url without https://
     TECH_VJ_API = environ.get('TECH_VJ_API', '199362b824e151c03427dcce4b9584dadc0d1aac') # your url shortner api
     TECH_VJ_TUTORIAL = os.environ.get("TECH_VJ_TUTORIAL", "https://t.me/c/1807317003/597")
